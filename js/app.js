@@ -1,21 +1,5 @@
  'use strict';
 
-//Constructor++++++++++++++++++++++++=============================================
-
-//  function getRandomIntInclusive(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1) + min);
-// }
-
-// function seattleShop(locationName,minCust ,maxCust ,aveCust ,custHour ,cookiesHour){
-  
-//   this.locationName=locationName;
-//   this.minCust=minCust;
-//   this.maxCust=maxCust;
-//   this.aveCust=aveCust;
-//   this.custHour=custHour;
-//   this.cookiesHour=cookiesHour;
-// }
-
 
 
 
