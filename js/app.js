@@ -1,28 +1,5 @@
 'use strict';
-let seattleShop = {
-    minhc: 23,
-    maxhc: 65,
-    aveCpc: 6.3,
-    numOfchour: 0,
-    amofcookpufhr: 0,
-    resultsArray: [],
-  randomCustomer: function () {
-        this.numOfchour = randomCust(23, 65) ;
-        console.log(seattleShop.numOfchour + ' ' + 'Customer');   
-    },
-    amofcookpufhrfunction: function () {
-        seattleShop.amofcookpufhr = seattleShop.numOfchour* seattleShop.aveCpc;
-        console.log(seattleShop.amofcookpufhr + ' ' +'amounts of cookies purchased for each hour');  
-    }
-    // seattleShop.resultsArray=
 
-}
-function randomCust(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-    //The maximum is exclusive and the minimum is inclusive 
-}
-seattleShop.randomCustomer();
-seattleShop.amofcookpufhrfunction();
 
 
 
