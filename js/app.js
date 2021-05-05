@@ -1,14 +1,5 @@
+
  'use strict';
-
-
-
-
-
-
-
-
-
-
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -59,12 +50,12 @@ const seattleShop = {
     toTall.textContent = `Tootal ${this.TOTAL} cookies`
   }
 }
-seattleShop.CalcilatecustHour();
-seattleShop.calculatecookiesHour();
-seattleShop.renderfunction();
-console.log(seattleShop.custHour);
-console.log(seattleShop.cookiesHour);
-console.log(seattleShop.TOTAL);
+// seattleShop.CalcilatecustHour();
+// seattleShop.calculatecookiesHour();
+// seattleShop.renderfunction();
+// console.log(seattleShop.custHour);
+// console.log(seattleShop.cookiesHour);
+// console.log(seattleShop.TOTAL);
 
 
 //+++++++++++++++++2222222222222222+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -110,12 +101,12 @@ nameThree.appendChild(finaltotal)
 finaltotal.textContent = ` Total : ${this.toTal} Cookies}`  
 }
 }
-Tokyo.randomCustomerFunction()
-Tokyo.amountOfcookiesFunctoin()
-Tokyo.renderFunction()
-console.log(Tokyo.randomCustomer)
-console.log(Tokyo.amountOfcookies)
-console.log(Tokyo.toTal +' ' + 'Total')
+// Tokyo.randomCustomerFunction()
+// Tokyo.amountOfcookiesFunctoin()
+// Tokyo.renderFunction()
+// console.log(Tokyo.randomCustomer)
+// console.log(Tokyo.amountOfcookies)
+// console.log(Tokyo.toTal +' ' + 'Total')
 
 
 //++++++++++++++++++++++333333333333333333++++++++++++++++++++++++++++++++++++++++++++++++
@@ -161,12 +152,12 @@ nameThree.appendChild(finaltotal)
 finaltotal.textContent = ` Total : ${this.toTal} Cookies}`  
 }
 }
-Dubai.randomCustomerFunction()
-Dubai.amountOfcookiesFunctoin()
-Dubai.renderFunction()
-console.log(Dubai.randomCustomer)
-console.log(Dubai.amountOfcookies)
-console.log(Dubai.toTal +' ' + 'Total')
+// Dubai.randomCustomerFunction()
+// Dubai.amountOfcookiesFunctoin()
+// Dubai.renderFunction()
+// console.log(Dubai.randomCustomer)
+// console.log(Dubai.amountOfcookies)
+// console.log(Dubai.toTal +' ' + 'Total')
 
 
 //++++++++++++4444444444444444444444++++++++++++++++++++++++++++++
@@ -214,12 +205,12 @@ nameThree.appendChild(finaltotal)
 finaltotal.textContent = ` Total : ${this.toTal} Cookies}`  
 }
 }
-Paris.randomCustomerFunction()
-Paris.amountOfcookiesFunctoin()
-Paris.renderFunction()
-console.log(Paris.randomCustomer)
-console.log(Paris.amountOfcookies)
-console.log(Paris.toTal +' ' + 'Total')
+// Paris.randomCustomerFunction()
+// Paris.amountOfcookiesFunctoin()
+// Paris.renderFunction()
+// console.log(Paris.randomCustomer)
+// console.log(Paris.amountOfcookies)
+// console.log(Paris.toTal +' ' + 'Total')
 
 
 //+++++++++++++55555555555555555555++++++++++++++++++++++++++++++=
@@ -267,9 +258,30 @@ nameThree.appendChild(finaltotal)
 finaltotal.textContent = ` Total : ${this.toTal} Cookies}`  
 }
 }
-Lima.randomCustomerFunction()
-Lima.amountOfcookiesFunctoin()
-Lima.renderFunction()
-console.log(Lima.randomCustomer)
-console.log(Lima.amountOfcookies)
-console.log(Lima.toTal +' ' + 'Total')
+// Lima.randomCustomerFunction()
+// Lima.amountOfcookiesFunctoin()
+// Lima.renderFunction()
+// console.log(Lima.randomCustomer)
+// console.log(Lima.amountOfcookies)
+// console.log(Lima.toTal +' ' + 'Total')
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++===========================
+
+let cookiesForm=document.getElementById('cookies')
+cookiesForm.addEventListener('submit', cliker);
+
+function cliker(event){
+
+  event.preventDefault();
+  let name=event.target.nameField.value
+  console.log(name)
+  let max=event.target.MaxCookiesperHour.value
+  console.log(max)
+  let min=event.target.MinmumCustomerPerHour.value
+  console.log(min)
+  let averg=event.target.AveregCoojiesPerHours.value
+  console.log(averg)
+
+  let addNewshop = new 
+}
