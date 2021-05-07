@@ -47,6 +47,21 @@ main article img {
     }
     footer{
         margin-top: 60px;
-        font-family: 'Lobster Two', cursive;
+        font-family: Georgia;
         font-size: 23px;
+        background-color: lightgray;
+        color: rgb(183, 151, 184);
+    }
+
+    .VVV {
+        font-family: 'Caveat', cursive;
+color: lightslategrey;
+font-size: 22px;
+
+    }
+
+    .VVVV {
+        font-family: Verdana;
+        font-size: 22px;
+    color: rgb(165, 198, 231);
     }
