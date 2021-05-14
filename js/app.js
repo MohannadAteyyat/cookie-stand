@@ -291,6 +291,7 @@ function shop(locationName, minCust, maxCust, aveCust) {
   this.custHour = [];
   this.cookiesHour = [];
   this.total = 0;
+  
   Shop.push(this);
 }
 shop.prototype.getcustHour = function () {
@@ -303,7 +304,10 @@ shop.prototype.getcookiesHour = function () {
   for (let i = 0; i < hours.length; i++) {
     this.cookiesHour.push(Math.floor((this.custHour[i] * this.aveCust)))
     this.total +=this.cookiesHour[i]
+    
   }
+
+  
 }
 let first = document.getElementById('first')
 
@@ -438,8 +442,38 @@ function cliker(event){
   addNewshop.getcustHour();
   addNewshop.getcookiesHour();
   addNewshop.creatTable()
+
+
+ 
+  deleterow();
+  gitFooter();
+  
+
+
+
+
   // addNewshop.gitFooter()
 }
+
+
+
+
+    function deleterow() {
+      let table3 = document.querySelector('table');
+      let rowCount = table3.rows.length;
+  
+      table3.deleteRow(rowCount -2);
+  }
+  
+  // $('#cookies').trigger("reset");
+ 
+    // document.getElementById("cookies").reset();
+    // document.querySelector("cookies").reset();
+    
+    // document.querySelector('#cookies').value = '';
+
+
+
 
 // function getInputTableFooter () {
 //   let tabelInput= document.createElement('tr')
