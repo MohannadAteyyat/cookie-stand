@@ -48,113 +48,113 @@ let first = document.getElementById('first')
 
 
   console.log(first);
-  let table = document.createElement('table')
-  first.appendChild(table)
+//   let table = document.createElement('table')
+//   first.appendChild(table)
 
-function getheeder () {
-let heeder= document.createElement('tr')
-table.appendChild(heeder)
-let th1 = document.createElement('th')
-heeder.appendChild(th1)
-th1.textContent= 'Name'
+// function getheeder () {
+// let heeder= document.createElement('tr')
+// table.appendChild(heeder)
+// let th1 = document.createElement('th')
+// heeder.appendChild(th1)
+// th1.textContent= 'Name'
 
-for (let i = 0; i < hours.length; i++) {
-  let th2 =document.createElement('th')
-  heeder.appendChild(th2)
-th2.textContent=hours[i]
-}
-let lastrow = document.createElement('th')
-heeder.appendChild(lastrow)
-lastrow.textContent='Daily location Total'
-}
+// for (let i = 0; i < hours.length; i++) {
+//   let th2 =document.createElement('th')
+//   heeder.appendChild(th2)
+// th2.textContent=hours[i]
+// }
+// let lastrow = document.createElement('th')
+// heeder.appendChild(lastrow)
+// lastrow.textContent='Daily location Total'
+// }
 
 
-shop.prototype.creatTable = function () {
+// shop.prototype.creatTable = function () {
 
-  let datarow = document.createElement('tr')
-  table.appendChild(datarow)
-  let namedata=document.createElement('td')
-datarow.appendChild(namedata)
-namedata.textContent=this.locationName
+//   let datarow = document.createElement('tr')
+//   table.appendChild(datarow)
+//   let namedata=document.createElement('td')
+// datarow.appendChild(namedata)
+// namedata.textContent=this.locationName
 
-for (let i = 0; i < hours.length; i++) {
-  let td3 =document.createElement('td')
-  datarow.appendChild(td3)
-  td3.textContent=this.cookiesHour[i]
+// for (let i = 0; i < hours.length; i++) {
+//   let td3 =document.createElement('td')
+//   datarow.appendChild(td3)
+//   td3.textContent=this.cookiesHour[i]
   
-}
+// }
 
 
-let dataTotal=document.createElement('td')
-datarow.appendChild(dataTotal)
-dataTotal.textContent= this.total
+// let dataTotal=document.createElement('td')
+// datarow.appendChild(dataTotal)
+// dataTotal.textContent= this.total
 
-}
+// }
 
-getheeder();
+// getheeder();
 
-let Seattle = new shop('Seattle', 23, 65, 6.3)
-console.log(Seattle)
-Seattle.getcustHour();
-Seattle.getcookiesHour();
-Seattle.creatTable()
-let Tokyo = new shop('Tokyo', 3, 24, 1.2)
-console.log(Tokyo)
-Tokyo.getcustHour();
-Tokyo.getcookiesHour();
-Tokyo.creatTable()
-let Dubai = new shop('Dubai', 11, 38, 3.7)
-console.log(Dubai)
-Dubai.getcustHour();
-Dubai.getcookiesHour();
-Dubai.creatTable()
-let Paris = new shop('Paris', 20, 38, 2.3)
-console.log(Paris)
-Paris.getcustHour();
-Paris.getcookiesHour();
-Paris.creatTable();
-let Lima = new shop('Lima', 2, 16, 4.6)
-console.log(Lima)
-Lima.getcustHour();
-Lima.getcookiesHour();
-Lima.creatTable()
-
-
-function gitFooter () {
-
-let tableFooter = document.createElement('tr')
-table.appendChild(tableFooter)
+// let Seattle = new shop('Seattle', 23, 65, 6.3)
+// console.log(Seattle)
+// Seattle.getcustHour();
+// Seattle.getcookiesHour();
+// Seattle.creatTable()
+// let Tokyo = new shop('Tokyo', 3, 24, 1.2)
+// console.log(Tokyo)
+// Tokyo.getcustHour();
+// Tokyo.getcookiesHour();
+// Tokyo.creatTable()
+// let Dubai = new shop('Dubai', 11, 38, 3.7)
+// console.log(Dubai)
+// Dubai.getcustHour();
+// Dubai.getcookiesHour();
+// Dubai.creatTable()
+// let Paris = new shop('Paris', 20, 38, 2.3)
+// console.log(Paris)
+// Paris.getcustHour();
+// Paris.getcookiesHour();
+// Paris.creatTable();
+// let Lima = new shop('Lima', 2, 16, 4.6)
+// console.log(Lima)
+// Lima.getcustHour();
+// Lima.getcookiesHour();
+// Lima.creatTable()
 
 
+// function gitFooter () {
 
-let footerth=document.createElement('th')
-tableFooter.appendChild(footerth)
-footerth.textContent= ('Total')
+// let tableFooter = document.createElement('tr')
+// table.appendChild(tableFooter)
 
-for (let i = 0; i < hours.length; i++) {
-  let totaleachhour=0
-  let sumOftotal=0
 
-for (let j = 0; j < Shop.length; j++) {
-  
-  
-  totaleachhour+=Shop[j].cookiesHour[i]
+
+// let footerth=document.createElement('th')
+// tableFooter.appendChild(footerth)
+// footerth.textContent= ('Total')
+
+// for (let i = 0; i < hours.length; i++) {
+//   let totaleachhour=0
+//   let sumOftotal=0
+
+// for (let j = 0; j < Shop.length; j++) {
   
   
+//   totaleachhour+=Shop[j].cookiesHour[i]
   
-}
-// sumOftotal += totaleachhour.hours[i];
+  
+  
+// }
+// // sumOftotal += totaleachhour.hours[i];
 
-// console.log('ddddddddddddddd'+'  ' + sumOftotal)
+// // console.log('ddddddddddddddd'+'  ' + sumOftotal)
 
-let footerth3=document.createElement('td')
-  tableFooter.appendChild(footerth3)
-  footerth3.textContent=totaleachhour
-}
+// let footerth3=document.createElement('td')
+//   tableFooter.appendChild(footerth3)
+//   footerth3.textContent=totaleachhour
+// }
 
-}
+// }
 
-gitFooter();
+// gitFooter();
 
 
 
